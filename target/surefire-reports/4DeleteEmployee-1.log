@@ -1,4 +1,4 @@
-19:29:04.883 request:
+23:33:00.651 request:
 1 > POST http://dummy.restapiexample.com/api/v1/create
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -8,7 +8,7 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_171)
 {"name":"DeleteEmployee","salary":"123","age":"23"}
 
-19:29:05.879 response time in milliseconds: 993.01
+23:33:01.405 response time in milliseconds: 748.88
 1 < 200
 1 < Accept-Ranges: bytes
 1 < Access-Control-Allow-Origin: *
@@ -17,41 +17,41 @@
 1 < Cache-Control: no-store, no-cache, must-revalidate
 1 < Connection: keep-alive
 1 < Content-Type: text/html; charset=UTF-8
-1 < Date: Sat, 02 Nov 2019 13:59:06 GMT
+1 < Date: Sat, 02 Nov 2019 18:03:02 GMT
 1 < Expires: Thu, 19 Nov 1981 08:52:00 GMT
 1 < PageSpeed: off
 1 < Pragma: no-cache
 1 < Referrer-Policy: 
 1 < Response: 200
 1 < Server: nginx/1.16.0
-1 < Set-Cookie: [PHPSESSID=5ac6de67d3fbec8aafbe800a61927ca8; path=/, ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 14:29:06 UTC, ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 15:59:06 UTC, ezoab_133674=mod6-c; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 15:59:06 UTC, active_template::133674=pub_site.1572703146; Path=/; Domain=restapiexample.com; Expires=Mon, 04 Nov 2019 13:59:06 UTC, ezCMPCCS=true; Path=/; Domain=restapiexample.com; Expires=Mon, 02 Nov 2020 14:59:06 GMT]
+1 < Set-Cookie: [PHPSESSID=42afbb7c36f55cb0be74f254ba5798fe; path=/, ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 18:33:02 UTC, ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 20:03:02 UTC, ezoab_133674=mod88; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 20:03:02 UTC, active_template::133674=pub_site.1572717782; Path=/; Domain=restapiexample.com; Expires=Mon, 04 Nov 2019 18:03:02 UTC, ezCMPCCS=true; Path=/; Domain=restapiexample.com; Expires=Mon, 02 Nov 2020 19:03:02 GMT]
 1 < Vary: Accept-Encoding,X-APP-JSON
 1 < Via: 1.1 varnish (Varnish/6.0)
 1 < X-Ezoic-Cdn: Miss
 1 < X-Middleton-Response: 200
 1 < X-Sol: pub_site
 1 < X-VCache: Miss
-1 < X-Varnish: 199412575
-1 < X-shard: 
-{"name":"DeleteEmployee","salary":"123","age":"23","id":"80132"}
+1 < X-Varnish: 197033645
+1 < X-shard: 100224202
+{"name":"DeleteEmployee","salary":"123","age":"23","id":"84733"}
 
-19:29:05.884 [print] {
+23:33:01.408 [print] {
   "name": "DeleteEmployee",
   "salary": "123",
   "age": "23",
-  "id": "80132"
+  "id": "84733"
 }
 
-19:29:05.913 [print] 80132
-19:29:05.933 request:
-2 > DELETE http://dummy.restapiexample.com/api/v1/delete/80132
+23:33:01.411 [print] 84733
+23:33:01.420 request:
+2 > DELETE http://dummy.restapiexample.com/api/v1/delete/84733
 2 > Accept-Encoding: gzip,deflate
 2 > Connection: Keep-Alive
-2 > Cookie: PHPSESSID=5ac6de67d3fbec8aafbe800a61927ca8; active_template::133674=pub_site.1572703146; ezCMPCCS=true; ezoab_133674=mod6-c; ezoadgid_133674=-1; ezoref_133674=
+2 > Cookie: PHPSESSID=42afbb7c36f55cb0be74f254ba5798fe; active_template::133674=pub_site.1572717782; ezCMPCCS=true; ezoab_133674=mod88; ezoadgid_133674=-1; ezoref_133674=
 2 > Host: dummy.restapiexample.com
 2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_171)
 
-19:29:06.720 response time in milliseconds: 783.81
+23:33:02.174 response time in milliseconds: 752.25
 2 < 200
 2 < Accept-Ranges: bytes
 2 < Access-Control-Allow-Origin: *
@@ -60,39 +60,39 @@
 2 < Cache-Control: no-store, no-cache, must-revalidate
 2 < Connection: keep-alive
 2 < Content-Type: text/html; charset=UTF-8
-2 < Date: Sat, 02 Nov 2019 13:59:07 GMT
+2 < Date: Sat, 02 Nov 2019 18:03:03 GMT
 2 < Expires: Thu, 19 Nov 1981 08:52:00 GMT
 2 < PageSpeed: off
 2 < Pragma: no-cache
 2 < Referrer-Policy: 
 2 < Response: 200
 2 < Server: nginx/1.16.0
-2 < Set-Cookie: [ezoab_133674=mod6-c; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 14:29:07 UTC, ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 14:29:07 UTC, ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 15:59:07 UTC, active_template::133674=pub_site.1572703147; Path=/; Domain=restapiexample.com; Expires=Mon, 04 Nov 2019 13:59:07 UTC, ezCMPCCS=true; Path=/; Domain=restapiexample.com; Expires=Mon, 02 Nov 2020 14:59:07 GMT]
+2 < Set-Cookie: [ezoab_133674=mod88; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 18:33:03 UTC, ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 18:33:03 UTC, ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 20:03:03 UTC, active_template::133674=pub_site.1572717783; Path=/; Domain=restapiexample.com; Expires=Mon, 04 Nov 2019 18:03:03 UTC, ezCMPCCS=true; Path=/; Domain=restapiexample.com; Expires=Mon, 02 Nov 2020 19:03:03 GMT]
 2 < Vary: Accept-Encoding,X-APP-JSON
 2 < Via: 1.1 varnish (Varnish/6.0)
 2 < X-Ezoic-Cdn: Miss
 2 < X-Middleton-Response: 200
 2 < X-Sol: pub_site
 2 < X-VCache: Miss
-2 < X-Varnish: 520513657
-2 < X-shard: 10022557
+2 < X-Varnish: 202330650
+2 < X-shard: 
 {"success":{"text":"successfully! deleted Records"}}
 
-19:29:06.723 [print] {
+23:33:02.176 [print] {
   "success": {
     "text": "successfully! deleted Records"
   }
 }
 
-19:29:06.741 request:
-3 > GET http://dummy.restapiexample.com/api/v1/employee/80132
+23:33:02.189 request:
+3 > GET http://dummy.restapiexample.com/api/v1/employee/84733
 3 > Accept-Encoding: gzip,deflate
 3 > Connection: Keep-Alive
-3 > Cookie: PHPSESSID=5ac6de67d3fbec8aafbe800a61927ca8; active_template::133674=pub_site.1572703147; ezCMPCCS=true; ezoab_133674=mod6-c; ezoadgid_133674=-1; ezoref_133674=
+3 > Cookie: PHPSESSID=42afbb7c36f55cb0be74f254ba5798fe; active_template::133674=pub_site.1572717783; ezCMPCCS=true; ezoab_133674=mod88; ezoadgid_133674=-1; ezoref_133674=
 3 > Host: dummy.restapiexample.com
 3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_171)
 
-19:29:07.517 response time in milliseconds: 772.40
+23:33:02.955 response time in milliseconds: 760.96
 3 < 200
 3 < Accept-Ranges: bytes
 3 < Access-Control-Allow-Origin: *
@@ -101,7 +101,7 @@
 3 < Cache-Control: no-store, no-cache, must-revalidate
 3 < Connection: keep-alive
 3 < Content-Type: text/html; charset=UTF-8
-3 < Date: Sat, 02 Nov 2019 13:59:08 GMT
+3 < Date: Sat, 02 Nov 2019 18:03:04 GMT
 3 < Display: pub_site_to_orig_sol
 3 < Expires: Thu, 19 Nov 1981 08:52:00 GMT
 3 < PageSpeed: off
@@ -109,7 +109,7 @@
 3 < Referrer-Policy: 
 3 < Response: 200
 3 < Server: nginx/1.16.0
-3 < Set-Cookie: [ezoab_133674=mod6-c; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 14:29:08 UTC, ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 14:29:08 UTC, ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 15:59:08 UTC, active_template::133674=pub_site.1572703148; Path=/; Domain=restapiexample.com; Expires=Mon, 04 Nov 2019 13:59:08 UTC, lp_133674=http://dummy.restapiexample.com/api/v1/employee/80132; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 15:59:08 UTC, ezovuuidtime_133674=1572703148; Path=/; Domain=restapiexample.com; Expires=Mon, 04 Nov 2019 13:59:08 UTC, ezovuuid_133674=16be85f9-4997-448c-7b78-42ff9d574ad4; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 14:29:08 UTC, ezopvc_133674=1; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 14:29:08 UTC, ezCMPCCS=true; Path=/; Domain=restapiexample.com; Expires=Mon, 02 Nov 2020 14:59:08 GMT]
+3 < Set-Cookie: [ezoab_133674=mod88; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 18:33:03 UTC, ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 18:33:03 UTC, ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 20:03:03 UTC, active_template::133674=pub_site.1572717783; Path=/; Domain=restapiexample.com; Expires=Mon, 04 Nov 2019 18:03:03 UTC, lp_133674=http://dummy.restapiexample.com/api/v1/employee/84733; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 20:03:04 UTC, ezovuuidtime_133674=1572717784; Path=/; Domain=restapiexample.com; Expires=Mon, 04 Nov 2019 18:03:04 UTC, ezovuuid_133674=222f29f6-64a1-49be-55f1-f083e6dacf52; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 18:33:04 UTC, ezopvc_133674=1; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 18:33:04 UTC, ezCMPCCS=true; Path=/; Domain=restapiexample.com; Expires=Mon, 02 Nov 2020 19:03:04 GMT]
 3 < Vary: User-Agent,Accept-Encoding,X-APP-JSON
 3 < Via: 1.1 varnish (Varnish/6.0)
 3 < X-Ezoic-Cdn: Miss
@@ -117,8 +117,8 @@
 3 < X-Middleton-Response: 200
 3 < X-Sol: pub_site
 3 < X-VCache: Miss
-3 < X-Varnish: 203424617
-3 < X-shard: 
+3 < X-Varnish: 212673672
+3 < X-shard: 100224202
 false<script type='text/javascript' style='display:none;' async>
 __ez.queue.addFile('edmonton.php', '/detroitchicago/edmonton.webp?a=a&cb=3&shcb=32', true, [], true, false, false, false);
 __ez.queue.addFile('jellyfish.php', '/porpoiseant/jellyfish.webp?a=a&cb=3&shcb=32', false, [], true, false, false, false);
@@ -127,9 +127,8 @@ __ez.queue.addFile('jellyfish.php', '/porpoiseant/jellyfish.webp?a=a&cb=3&shcb=3
 <script>var _audins_dom="restapiexample_com",_audins_did=133674;__ez.queue.addDelayFunc("audins.js","__ez.script.add", "//go.ezoic.net/detroitchicago/audins.js?cb=187-3");</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.restapiexample_com,DomainId.133674" border="0" height="1" width="1" alt="Quantcast"/></div></noscript><noscript><img src="https://sb.scorecardresearch.com/p?c1=2&c2=20015427&cv=2.0&cj=1"/></noscript>
 <script type='text/javascript'>(function(){function a(a){for(var b=0;b<document.styleSheets.length;b++)if(document.styleSheets[b].href==a)return!0;return!1}var b=function(a,b){for(var c,d=0;d<b.length;d++)if(c=b[d],!1==c.complete||"undefined"!=typeof c.readyState&&4>c.readyState){var e=c.getAttribute("src")||c.currentSrc;if("undefined"!=typeof c.readyState&&0==c.readyState)c.addEventListener("loadstart",function(a){var b=a.getAttribute("src")||a.currentSrc;ezoReqStart(a,b)});else{var e=c.getAttribute("src")||c.currentSrc;ezoReqStart(c,e)}c.addEventListener("load",function(a){var b=a.currentTarget.getAttribute("src")||a.srcElement.currentSrc;ezoReqEnd(a,b)}),c.addEventListener("loadeddata",function(a){var b=a.currentTarget.getAttribute("src")||a.srcElement.currentSrc;ezoReqEnd(a,b)}),c.addEventListener("error",function(a){var b=a.currentTarget.getAttribute("src")||a.srcElement.currentSrc;ezoReqEnd(a,b)})}};b("img",document.querySelectorAll("img")),b("video",document.querySelectorAll("video")),b("audio",document.querySelectorAll("audio")),function(b){for(var c,d=0;d<b.length;d++)if(c=b[d],"stylesheet"!=c.getAttribute("rel")||null==c.getAttribute("href"))continue;else if(a(c.getAttribute("href"))){ezoReqStart(c,c.getAttribute("href"));var e=document.createElement("img");e.onerror=function(a){ezoReqEnd(c,a.path[0].currentSrc)},e.src=c.getAttribute("href")}}(document.querySelectorAll("link"))})();</script>
 
-</script>
+cript>
 
->
 
 t>
 

@@ -1,6 +1,6 @@
 @ViewEmployee
-Feature: View Employee 
-All created 
+Feature: Get Employee details
+
 
 #
 Background:
@@ -23,7 +23,7 @@ Then status 200
   @newEmployee
   Scenario: Check new Employee created can be viewed
 Given path '/create'
-* def employee = read('C:/Users/s/eclipse-workspace/Employee/src/test/java/payload/CreateEmployee/CreateEmployee.json')
+* def employee = read('classpath:payload/CreateEmployee/CreateEmployee.json')
 * print employee
 And request employee
 When method post
@@ -32,5 +32,5 @@ Then status 200
 *  match response == {name:'#string',salary:'#string' ,age:'#string',id:'#string'}
 * def eid = response.id
 * print eid
-#Read Operation
+
 

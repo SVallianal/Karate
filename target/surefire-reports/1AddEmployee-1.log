@@ -1,0 +1,45 @@
+23:32:52.559 [print] http://dummy.restapiexample.com/api/v1
+23:32:53.207 request:
+1 > POST http://dummy.restapiexample.com/api/v1/create
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 42
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dummy.restapiexample.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_171)
+{"name":"CCRUD","salary":"123","age":"23"}
+
+23:32:54.235 response time in milliseconds: 1021.99
+1 < 200
+1 < Accept-Ranges: bytes
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+1 < Age: 0
+1 < Cache-Control: no-store, no-cache, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: text/html; charset=UTF-8
+1 < Date: Sat, 02 Nov 2019 18:02:55 GMT
+1 < Expires: Thu, 19 Nov 1981 08:52:00 GMT
+1 < PageSpeed: off
+1 < Pragma: no-cache
+1 < Referrer-Policy: 
+1 < Response: 200
+1 < Server: nginx/1.16.0
+1 < Set-Cookie: [PHPSESSID=6b1a3a22056e5da449ae1d040fc95327; path=/, ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 18:32:55 UTC, ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 20:02:55 UTC, ezoab_133674=mod6-c; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 20:02:55 UTC, active_template::133674=pub_site.1572717775; Path=/; Domain=restapiexample.com; Expires=Mon, 04 Nov 2019 18:02:55 UTC, ezCMPCCS=true; Path=/; Domain=restapiexample.com; Expires=Mon, 02 Nov 2020 19:02:55 GMT]
+1 < Vary: Accept-Encoding,X-APP-JSON
+1 < Via: 1.1 varnish (Varnish/6.0)
+1 < X-Ezoic-Cdn: Miss
+1 < X-Middleton-Response: 200
+1 < X-Sol: pub_site
+1 < X-VCache: Miss
+1 < X-Varnish: 211369941
+1 < X-shard: 100224202
+{"error":{"text":SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'CCRUD' for key 'employee_name_unique'}}
+
+23:32:54.248 [print] Response is {
+  "error": {
+    "text": "SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'CCRUD' for key 'employee_name_unique'"
+  }
+}
+
+23:32:54.274 [print] 
