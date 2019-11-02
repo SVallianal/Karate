@@ -1,3 +1,53 @@
-15:46:48.394 [print] http://dummy.restapiexample.com/api/v1
-15:46:48.406 [print] 72203
-15:46:48.427 assertion failed: path: $.celsius, actual: 100, expected: '#String', reason: not equal
+16:15:47.520 [print] http://dummy.restapiexample.com/api/v1
+16:14:03.772 [print] 0
+16:14:03.772 [print] 0
+16:14:03.801 [print]
+16:14:03.803 request:
+1 > GET http://dummy.restapiexample.com/api/v1/employee/0
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: dummy.restapiexample.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_171)
+
+16:14:04.621 response time in milliseconds: 814.77
+1 < 200
+1 < Accept-Ranges: bytes
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+1 < Age: 0
+1 < Cache-Control: no-store, no-cache, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: text/html; charset=UTF-8
+1 < Date: Sat, 02 Nov 2019 10:44:05 GMT
+1 < Display: pub_site_to_orig_sol
+1 < Expires: Thu, 19 Nov 1981 08:52:00 GMT
+1 < PageSpeed: off
+1 < Pragma: no-cache
+1 < Referrer-Policy: 
+1 < Response: 200
+1 < Server: nginx/1.16.0
+1 < Set-Cookie: [PHPSESSID=6a55edd24b11fc6a59dc67c114ee0af7; path=/, ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 11:14:04 UTC, ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 12:44:04 UTC, ezoab_133674=mod59-c; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 12:44:04 UTC, active_template::133674=pub_site.1572691444; Path=/; Domain=restapiexample.com; Expires=Mon, 04 Nov 2019 10:44:04 UTC, lp_133674=http://dummy.restapiexample.com/api/v1/employee/0; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 12:44:05 UTC, ezovuuidtime_133674=1572691445; Path=/; Domain=restapiexample.com; Expires=Mon, 04 Nov 2019 10:44:05 UTC, ezovuuid_133674=1f9f5f85-ecae-42ac-5f00-c9cb39943c66; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 11:14:05 UTC, ezopvc_133674=1; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 11:14:05 UTC, ezCMPCCS=true; Path=/; Domain=restapiexample.com; Expires=Mon, 02 Nov 2020 11:44:05 GMT]
+1 < Vary: User-Agent,Accept-Encoding,X-APP-JSON
+1 < Via: 1.1 varnish (Varnish/6.0)
+1 < X-Ezoic-Cdn: Miss
+1 < X-Middleton-Display: pub_site_to_orig_sol
+1 < X-Middleton-Response: 200
+1 < X-Sol: pub_site
+1 < X-VCache: Miss
+1 < X-Varnish: 863373248
+1 < X-shard: 100224107
+false{"error":{"text":"Id is empty"}}<script type='text/javascript' style='display:none;' async>
+__ez.queue.addFile('edmonton.php', '/detroitchicago/edmonton.webp?a=a&cb=3&shcb=32', true, [], true, false, false, false);
+__ez.queue.addFile('jellyfish.php', '/porpoiseant/jellyfish.webp?a=a&cb=3&shcb=32', false, [], true, false, false, false);
+</script>
+
+<script>var _audins_dom="restapiexample_com",_audins_did=133674;__ez.queue.addDelayFunc("audins.js","__ez.script.add", "//go.ezoic.net/detroitchicago/audins.js?cb=187-3");</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.restapiexample_com,DomainId.133674" border="0" height="1" width="1" alt="Quantcast"/></div></noscript><noscript><img src="https://sb.scorecardresearch.com/p?c1=2&c2=20015427&cv=2.0&cj=1"/></noscript>
+<script type='text/javascript'>(function(){function a(a){for(var b=0;b<document.styleSheets.length;b++)if(document.styleSheets[b].href==a)return!0;return!1}var b=function(a,b){for(var c,d=0;d<b.length;d++)if(c=b[d],!1==c.complete||"undefined"!=typeof c.readyState&&4>c.readyState){var e=c.getAttribute("src")||c.currentSrc;if("undefined"!=typeof c.readyState&&0==c.readyState)c.addEventListener("loadstart",function(a){var b=a.getAttribute("src")||a.currentSrc;ezoReqStart(a,b)});else{var e=c.getAttribute("src")||c.currentSrc;ezoReqStart(c,e)}c.addEventListener("load",function(a){var b=a.currentTarget.getAttribute("src")||a.srcElement.currentSrc;ezoReqEnd(a,b)}),c.addEventListener("loadeddata",function(a){var b=a.currentTarget.getAttribute("src")||a.srcElement.currentSrc;ezoReqEnd(a,b)}),c.addEventListener("error",function(a){var b=a.currentTarget.getAttribute("src")||a.srcElement.currentSrc;ezoReqEnd(a,b)})}};b("img",document.querySelectorAll("img")),b("video",document.querySelectorAll("video")),b("audio",document.querySelectorAll("audio")),function(b){for(var c,d=0;d<b.length;d++)if(c=b[d],"stylesheet"!=c.getAttribute("rel")||null==c.getAttribute("href"))continue;else if(a(c.getAttribute("href"))){ezoReqStart(c,c.getAttribute("href"));var e=document.createElement("img");e.onerror=function(a){ezoReqEnd(c,a.path[0].currentSrc)},e.src=c.getAttribute("href")}}(document.querySelectorAll("link"))})();</script>
+
+16:14:04.662 [print] false{"error":{"text":"Id is empty"}}<script type='text/javascript' style='display:none;' async>
+__ez.queue.addFile('edmonton.php', '/detroitchicago/edmonton.webp?a=a&cb=3&shcb=32', true, [], true, false, false, false);
+__ez.queue.addFile('jellyfish.php', '/porpoiseant/jellyfish.webp?a=a&cb=3&shcb=32', false, [], true, false, false, false);
+</script>
+
+<script>var _audins_dom="restapiexample_com",_audins_did=133674;__ez.queue.addDelayFunc("audins.js","__ez.script.add", "//go.ezoic.net/detroitchicago/audins.js?cb=187-3");</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.restapiexample_com,DomainId.133674" border="0" height="1" width="1" alt="Quantcast"/></div></noscript><noscript><img src="https://sb.scorecardresearch.com/p?c1=2&c2=20015427&cv=2.0&cj=1"/></noscript>
+<script type='text/javascript'>(function(){function a(a){for(var b=0;b<document.styleSheets.length;b++)if(document.styleSheets[b].href==a)return!0;return!1}var b=function(a,b){for(var c,d=0;d<b.length;d++)if(c=b[d],!1==c.complete||"undefined"!=typeof c.readyState&&4>c.readyState){var e=c.getAttribute("src")||c.currentSrc;if("undefined"!=typeof c.readyState&&0==c.readyState)c.addEventListener("loadstart",function(a){var b=a.getAttribute("src")||a.currentSrc;ezoReqStart(a,b)});else{var e=c.getAttribute("src")||c.currentSrc;ezoReqStart(c,e)}c.addEventListener("load",function(a){var b=a.currentTarget.getAttribute("src")||a.srcElement.currentSrc;ezoReqEnd(a,b)}),c.addEventListener("loadeddata",function(a){var b=a.currentTarget.getAttribute("src")||a.srcElement.currentSrc;ezoReqEnd(a,b)}),c.addEventListener("error",function(a){var b=a.currentTarget.getAttribute("src")||a.srcElement.currentSrc;ezoReqEnd(a,b)})}};b("img",document.querySelectorAll("img")),b("video",document.querySelectorAll("video")),b("audio",document.querySelectorAll("audio")),function(b){for(var c,d=0;d<b.length;d++)if(c=b[d],"stylesheet"!=c.getAttribute("rel")||null==c.getAttribute("href"))continue;else if(a(c.getAttribute("href"))){ezoReqStart(c,c.getAttribute("href"));var e=document.createElement("img");e.onerror=function(a){ezoReqEnd(c,a.path[0].currentSrc)},e.src=c.getAttribute("href")}}(document.querySelectorAll("link"))})();</script>

@@ -10,7 +10,7 @@ import com.jayway.jsonpath.Configuration;
 import cucumber.api.CucumberOptions;
 
 @RunWith(Karate.class)
-//@CucumberOptions(tags= {"@crud"})
+@CucumberOptions(tags= {"@ViewEmployee"})
 public class EmployeeRunner {
 	
 	 public static void generateReport(String karateOutputPath) {        

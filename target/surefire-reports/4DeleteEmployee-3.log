@@ -1,0 +1,135 @@
+19:29:09.091 request:
+1 > POST http://dummy.restapiexample.com/api/v1/create
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 51
+1 > Content-Type: text/plain; charset=UTF-8
+1 > Host: dummy.restapiexample.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_171)
+{"name":"DeleteEmployee","salary":"123","age":"23"}
+
+19:29:09.859 response time in milliseconds: 763.38
+1 < 200
+1 < Accept-Ranges: bytes
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+1 < Age: 0
+1 < Cache-Control: no-store, no-cache, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: text/html; charset=UTF-8
+1 < Date: Sat, 02 Nov 2019 13:59:11 GMT
+1 < Expires: Thu, 19 Nov 1981 08:52:00 GMT
+1 < PageSpeed: off
+1 < Pragma: no-cache
+1 < Referrer-Policy: 
+1 < Response: 200
+1 < Server: nginx/1.16.0
+1 < Set-Cookie: [PHPSESSID=d125fe3fd6ebc86e7c3192da52bf6268; path=/, ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 14:29:10 UTC, ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 15:59:10 UTC, ezoab_133674=mod7; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 15:59:10 UTC, active_template::133674=pub_site.1572703150; Path=/; Domain=restapiexample.com; Expires=Mon, 04 Nov 2019 13:59:10 UTC, ezCMPCCS=true; Path=/; Domain=restapiexample.com; Expires=Mon, 02 Nov 2020 14:59:11 GMT]
+1 < Vary: Accept-Encoding,X-APP-JSON
+1 < Via: 1.1 varnish (Varnish/6.0)
+1 < X-Ezoic-Cdn: Miss
+1 < X-Middleton-Response: 200
+1 < X-Sol: pub_site
+1 < X-VCache: Miss
+1 < X-Varnish: 198107820
+1 < X-shard: 100224202
+{"name":"DeleteEmployee","salary":"123","age":"23","id":"80136"}
+
+19:29:09.861 [print] {
+  "name": "DeleteEmployee",
+  "salary": "123",
+  "age": "23",
+  "id": "80136"
+}
+
+19:29:09.865 [print] 80136
+19:29:09.907 request:
+2 > DELETE http://dummy.restapiexample.com/api/v1/delete/80136
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Cookie: PHPSESSID=d125fe3fd6ebc86e7c3192da52bf6268; active_template::133674=pub_site.1572703150; ezCMPCCS=true; ezoab_133674=mod7; ezoadgid_133674=-1; ezoref_133674=
+2 > Host: dummy.restapiexample.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_171)
+
+19:29:10.658 response time in milliseconds: 747.55
+2 < 200
+2 < Accept-Ranges: bytes
+2 < Access-Control-Allow-Origin: *
+2 < Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+2 < Age: 0
+2 < Cache-Control: no-store, no-cache, must-revalidate
+2 < Connection: keep-alive
+2 < Content-Type: text/html; charset=UTF-8
+2 < Date: Sat, 02 Nov 2019 13:59:11 GMT
+2 < Expires: Thu, 19 Nov 1981 08:52:00 GMT
+2 < PageSpeed: off
+2 < Pragma: no-cache
+2 < Referrer-Policy: 
+2 < Response: 200
+2 < Server: nginx/1.16.0
+2 < Set-Cookie: [ezoab_133674=mod7; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 14:29:11 UTC, ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 14:29:11 UTC, ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 15:59:11 UTC, active_template::133674=pub_site.1572703151; Path=/; Domain=restapiexample.com; Expires=Mon, 04 Nov 2019 13:59:11 UTC, ezCMPCCS=true; Path=/; Domain=restapiexample.com; Expires=Mon, 02 Nov 2020 14:59:11 GMT]
+2 < Vary: Accept-Encoding,X-APP-JSON
+2 < Via: 1.1 varnish (Varnish/6.0)
+2 < X-Ezoic-Cdn: Miss
+2 < X-Middleton-Response: 200
+2 < X-Sol: pub_site
+2 < X-VCache: Miss
+2 < X-Varnish: 865951454
+2 < X-shard: 100224107
+{"success":{"text":"successfully! deleted Records"}}
+
+19:29:10.660 [print] 748
+19:29:10.680 assertion failed: assert evaluated to false: responseTime < 590
+e < 590
+
+19:17:47.450 request:
+3 > GET http://dummy.restapiexample.com/api/v1/employee/79910
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Cookie: PHPSESSID=4cf2c6e6f1daafa7d2b9051863207394; active_template::133674=pub_site.1572702467; ezCMPCCS=true; ezoab_133674=mod6-c; ezoadgid_133674=-1; ezoref_133674=
+3 > Host: dummy.restapiexample.com
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_171)
+
+19:17:48.242 response time in milliseconds: 790.36
+3 < 200
+3 < Accept-Ranges: bytes
+3 < Access-Control-Allow-Origin: *
+3 < Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+3 < Age: 0
+3 < Cache-Control: no-store, no-cache, must-revalidate
+3 < Connection: keep-alive
+3 < Content-Type: text/html; charset=UTF-8
+3 < Date: Sat, 02 Nov 2019 13:47:49 GMT
+3 < Display: pub_site_to_orig_sol
+3 < Expires: Thu, 19 Nov 1981 08:52:00 GMT
+3 < PageSpeed: off
+3 < Pragma: no-cache
+3 < Referrer-Policy: 
+3 < Response: 200
+3 < Server: nginx/1.16.0
+3 < Set-Cookie: [ezoab_133674=mod6-c; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 14:17:48 UTC, ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 14:17:48 UTC, ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 15:47:48 UTC, active_template::133674=pub_site.1572702468; Path=/; Domain=restapiexample.com; Expires=Mon, 04 Nov 2019 13:47:48 UTC, lp_133674=http://dummy.restapiexample.com/api/v1/employee/79910; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 15:47:49 UTC, ezovuuidtime_133674=1572702469; Path=/; Domain=restapiexample.com; Expires=Mon, 04 Nov 2019 13:47:49 UTC, ezovuuid_133674=cce30edf-ec52-4cdb-5042-54e985fd8df4; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 14:17:49 UTC, ezopvc_133674=1; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 14:17:49 UTC, ezCMPCCS=true; Path=/; Domain=restapiexample.com; Expires=Mon, 02 Nov 2020 14:47:49 GMT]
+3 < Vary: User-Agent,Accept-Encoding,X-APP-JSON
+3 < Via: 1.1 varnish (Varnish/6.0)
+3 < X-Ezoic-Cdn: Miss
+3 < X-Middleton-Display: pub_site_to_orig_sol
+3 < X-Middleton-Response: 200
+3 < X-Sol: pub_site
+3 < X-VCache: Miss
+3 < X-Varnish: 849761956
+3 < X-shard: 100224107
+false<script type='text/javascript' style='display:none;' async>
+__ez.queue.addFile('edmonton.php', '/detroitchicago/edmonton.webp?a=a&cb=3&shcb=32', true, [], true, false, false, false);
+__ez.queue.addFile('jellyfish.php', '/porpoiseant/jellyfish.webp?a=a&cb=3&shcb=32', false, [], true, false, false, false);
+</script>
+
+<script>var _audins_dom="restapiexample_com",_audins_did=133674;__ez.queue.addDelayFunc("audins.js","__ez.script.add", "//go.ezoic.net/detroitchicago/audins.js?cb=187-3");</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.restapiexample_com,DomainId.133674" border="0" height="1" width="1" alt="Quantcast"/></div></noscript><noscript><img src="https://sb.scorecardresearch.com/p?c1=2&c2=20015427&cv=2.0&cj=1"/></noscript>
+<script type='text/javascript'>(function(){function a(a){for(var b=0;b<document.styleSheets.length;b++)if(document.styleSheets[b].href==a)return!0;return!1}var b=function(a,b){for(var c,d=0;d<b.length;d++)if(c=b[d],!1==c.complete||"undefined"!=typeof c.readyState&&4>c.readyState){var e=c.getAttribute("src")||c.currentSrc;if("undefined"!=typeof c.readyState&&0==c.readyState)c.addEventListener("loadstart",function(a){var b=a.getAttribute("src")||a.currentSrc;ezoReqStart(a,b)});else{var e=c.getAttribute("src")||c.currentSrc;ezoReqStart(c,e)}c.addEventListener("load",function(a){var b=a.currentTarget.getAttribute("src")||a.srcElement.currentSrc;ezoReqEnd(a,b)}),c.addEventListener("loadeddata",function(a){var b=a.currentTarget.getAttribute("src")||a.srcElement.currentSrc;ezoReqEnd(a,b)}),c.addEventListener("error",function(a){var b=a.currentTarget.getAttribute("src")||a.srcElement.currentSrc;ezoReqEnd(a,b)})}};b("img",document.querySelectorAll("img")),b("video",document.querySelectorAll("video")),b("audio",document.querySelectorAll("audio")),function(b){for(var c,d=0;d<b.length;d++)if(c=b[d],"stylesheet"!=c.getAttribute("rel")||null==c.getAttribute("href"))continue;else if(a(c.getAttribute("href"))){ezoReqStart(c,c.getAttribute("href"));var e=document.createElement("img");e.onerror=function(a){ezoReqEnd(c,a.path[0].currentSrc)},e.src=c.getAttribute("href")}}(document.querySelectorAll("link"))})();</script>
+
+19:17:48.244 [print] false<script type='text/javascript' style='display:none;' async>
+__ez.queue.addFile('edmonton.php', '/detroitchicago/edmonton.webp?a=a&cb=3&shcb=32', true, [], true, false, false, false);
+__ez.queue.addFile('jellyfish.php', '/porpoiseant/jellyfish.webp?a=a&cb=3&shcb=32', false, [], true, false, false, false);
+</script>
+
+<script>var _audins_dom="restapiexample_com",_audins_did=133674;__ez.queue.addDelayFunc("audins.js","__ez.script.add", "//go.ezoic.net/detroitchicago/audins.js?cb=187-3");</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.restapiexample_com,DomainId.133674" border="0" height="1" width="1" alt="Quantcast"/></div></noscript><noscript><img src="https://sb.scorecardresearch.com/p?c1=2&c2=20015427&cv=2.0&cj=1"/></noscript>
+<script type='text/javascript'>(function(){function a(a){for(var b=0;b<document.styleSheets.length;b++)if(document.styleSheets[b].href==a)return!0;return!1}var b=function(a,b){for(var c,d=0;d<b.length;d++)if(c=b[d],!1==c.complete||"undefined"!=typeof c.readyState&&4>c.readyState){var e=c.getAttribute("src")||c.currentSrc;if("undefined"!=typeof c.readyState&&0==c.readyState)c.addEventListener("loadstart",function(a){var b=a.getAttribute("src")||a.currentSrc;ezoReqStart(a,b)});else{var e=c.getAttribute("src")||c.currentSrc;ezoReqStart(c,e)}c.addEventListener("load",function(a){var b=a.currentTarget.getAttribute("src")||a.srcElement.currentSrc;ezoReqEnd(a,b)}),c.addEventListener("loadeddata",function(a){var b=a.currentTarget.getAttribute("src")||a.srcElement.currentSrc;ezoReqEnd(a,b)}),c.addEventListener("error",function(a){var b=a.currentTarget.getAttribute("src")||a.srcElement.currentSrc;ezoReqEnd(a,b)})}};b("img",document.querySelectorAll("img")),b("video",document.querySelectorAll("video")),b("audio",document.querySelectorAll("audio")),function(b){for(var c,d=0;d<b.length;d++)if(c=b[d],"stylesheet"!=c.getAttribute("rel")||null==c.getAttribute("href"))continue;else if(a(c.getAttribute("href"))){ezoReqStart(c,c.getAttribute("href"));var e=document.createElement("img");e.onerror=function(a){ezoReqEnd(c,a.path[0].currentSrc)},e.src=c.getAttribute("href")}}(document.querySelectorAll("link"))})();</script>
+t>

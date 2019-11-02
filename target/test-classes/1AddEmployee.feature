@@ -1,5 +1,5 @@
 
-Feature: Employee CRUD
+Feature: Employee
 
 #
 Background:
@@ -7,7 +7,7 @@ Background:
 #* header Accept 'appication/json'
 * url baseUrl
 * print baseUrl
-* def eid = 72203 
+* def eid 
 * print eid
  @ge
 Scenario: View all existing Employee
@@ -18,8 +18,9 @@ Then status 200
 * print response
 
 
-  @crud
-  Scenario: Check CRUD operations for Employee
+  @newEmployee
+  Scenario: Check new Employee can be created
+#Create operation
 Given path '/create'
 * def employee = read('C:/Users/s/eclipse-workspace/Employee/src/test/java/payload/CreateEmployee.json')
 * print employee
@@ -28,27 +29,39 @@ When method post
 Then status 200
 * print 'Response is', response
 * def eid = response.id
+* print eid
+#Read Operation
 
-
+  Scenario: Check duplicate Employee can be created 
+#Create operation
+Given path '/create'
+* def employee = read('C:/Users/s/eclipse-workspace/Employee/src/test/java/payload/CreateEmployee.json')
+* print employee
+And request read('C:/Users/s/eclipse-workspace/Employee/src/test/java/payload/CreateEmployee.json')
+When method post
+Then status 200
+* print 'Response is', response
+* def eid = response.id
+* print eid
+  Scenario: Check CRUD operations for Employee Read Employee
+* print eid
 Given path  '/employee/' + eid
 * print url
 When method get
 * print response
-
+Scenario: Check CRUD operations for Employee update Employee 
+#Update Operations
+* print eid
 Given path '/update/' + eid
 And request {"name":"CRUD1","salary":"123","age":"23"}
 When method put
 Then status 200
 * print response 
-
+Scenario: Check CRUD operations for Employee Employee Delete
+* print eid
 Given path '/delete/' + eid
 When method delete
 Then status 200
 * print response
 
 
-  Scenario: Check CRUD operations for Employee
-Given def temperature = { celsius: 100, fahrenheit: 212 }
-Then match temperature == { celsius: '#String', fahrenheit: '#? _ == $.celsius * 1.8 + 32' }
-# when validation logic is an 'equality' check, an embedded expression works better
-Then match temperature contains { fahrenheit: '#($.celsius * 1.8 + 32)' }

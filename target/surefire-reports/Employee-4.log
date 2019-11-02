@@ -1,0 +1,46 @@
+16:15:47.546 [print] http://dummy.restapiexample.com/api/v1
+16:14:04.711 [print] 0
+16:14:04.712 [print] 0
+16:14:04.721 request:
+1 > PUT http://dummy.restapiexample.com/api/v1/update/0
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 42
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dummy.restapiexample.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_171)
+{"name":"CRUD1","salary":"123","age":"23"}
+
+16:14:05.472 response time in milliseconds: 748.51
+1 < 200
+1 < Accept-Ranges: bytes
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+1 < Age: 0
+1 < Cache-Control: no-store, no-cache, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: text/html; charset=UTF-8
+1 < Date: Sat, 02 Nov 2019 10:44:06 GMT
+1 < Expires: Thu, 19 Nov 1981 08:52:00 GMT
+1 < PageSpeed: off
+1 < Pragma: no-cache
+1 < Referrer-Policy: 
+1 < Response: 200
+1 < Server: nginx/1.16.0
+1 < Set-Cookie: [PHPSESSID=e989c2c1fafd352be67088b3855f07d8; path=/, ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 11:14:05 UTC, ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 12:44:05 UTC, ezoab_133674=mod8-c; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 12:44:05 UTC, active_template::133674=pub_site.1572691445; Path=/; Domain=restapiexample.com; Expires=Mon, 04 Nov 2019 10:44:05 UTC, ezCMPCCS=true; Path=/; Domain=restapiexample.com; Expires=Mon, 02 Nov 2020 11:44:06 GMT]
+1 < Vary: Accept-Encoding,X-APP-JSON
+1 < Via: 1.1 varnish (Varnish/6.0)
+1 < X-Ezoic-Cdn: Miss
+1 < X-Middleton-Response: 200
+1 < X-Sol: pub_site
+1 < X-VCache: Miss
+1 < X-Varnish: 518262175
+1 < X-shard: 10022557
+{"name":"CRUD1","salary":"123","age":"23"}
+
+16:14:05.497 [print] {
+  "name": "CRUD1",
+  "salary": "123",
+  "age": "23"
+}
+

@@ -1,0 +1,59 @@
+21:25:24.621 [print] http://dummy.restapiexample.com/api/v1
+21:25:24.648 [print] {
+  "name": "4CRUD",
+  "salary": "123",
+  "age": "23"
+}
+
+21:25:24.657 request:
+1 > POST http://dummy.restapiexample.com/api/v1/create
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 42
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dummy.restapiexample.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_171)
+{"name":"4CRUD","salary":"123","age":"23"}
+
+21:25:25.432 response time in milliseconds: 774.18
+1 < 200
+1 < Accept-Ranges: bytes
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+1 < Age: 0
+1 < Cache-Control: no-store, no-cache, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: text/html; charset=UTF-8
+1 < Date: Sat, 02 Nov 2019 15:55:27 GMT
+1 < Expires: Thu, 19 Nov 1981 08:52:00 GMT
+1 < PageSpeed: off
+1 < Pragma: no-cache
+1 < Referrer-Policy: 
+1 < Response: 200
+1 < Server: nginx/1.16.0
+1 < Set-Cookie: [PHPSESSID=6cc2893c32240c08a3ab0dffce7d57dd; path=/, ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 16:25:26 UTC, ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 17:55:26 UTC, ezoab_133674=mod9; Path=/; Domain=restapiexample.com; Expires=Sat, 02 Nov 2019 17:55:26 UTC, active_template::133674=pub_site.1572710126; Path=/; Domain=restapiexample.com; Expires=Mon, 04 Nov 2019 15:55:26 UTC, ezCMPCCS=true; Path=/; Domain=restapiexample.com; Expires=Mon, 02 Nov 2020 16:55:27 GMT]
+1 < Vary: Accept-Encoding,X-APP-JSON
+1 < Via: 1.1 varnish (Varnish/6.0)
+1 < X-Ezoic-Cdn: Miss
+1 < X-Middleton-Response: 200
+1 < X-Sol: pub_site
+1 < X-VCache: Miss
+1 < X-Varnish: 199782505
+1 < X-shard: 100224202
+{"name":"4CRUD","salary":"123","age":"23","id":"82321"}
+
+21:25:25.441 [print] Response is {
+  "name": "4CRUD",
+  "salary": "123",
+  "age": "23",
+  "id": "82321"
+}
+
+}
+
+21:24:13.149 [print] 82299
+QLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1CRUD' for key 'employee_name_unique'"
+  }
+}
+
+3:26.419 [print] 
