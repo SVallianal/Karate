@@ -1,0 +1,9 @@
+15:46:48.810 [print] hello1
+15:46:48.811 after Scenario Outline:  
+15:46:48.812 javascript function call failed: java.io.FileNotFoundException: C:\Users\s\eclipse-workspace\Employee\target\test-classes\after-scenario.feature (The system cannot find the file specified)
+15:46:48.812 failed function body: function(){
+  var info = karate.info; 
+  karate.log('after', info.scenarioType + ':', info.scenarioName);
+  karate.call('after-scenario.feature', { caller: info.featureFileName });
+}
+15:46:48.812 afterScenario hook failed: javascript function call failed: java.io.FileNotFoundException: C:\Users\s\eclipse-workspace\Employee\target\test-classes\after-scenario.feature (The system cannot find the file specified)
