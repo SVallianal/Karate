@@ -24,14 +24,14 @@ Folder Structure
     ├── test                               # Automated tests (alternatively `spec` or `tests`)
          └── resources                     #Feature File & configuration file
                     └── Feature Files
-                    └── karate-config.js  #
+                    └── karate-config.js  
          └── java                          #Runner files & Json Payload
               └── payload file      
               └── runner file  
     ├── surefire-reports                  # log files & html reports
          └── *.html                       
          └── *.log                                         
-    ├── pom.xml                           #pom.xml
+    ├── pom.xml                           #dependencies and plugins
     └── README.md
     
 ###### karate-config.js
