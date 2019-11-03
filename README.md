@@ -44,5 +44,5 @@ http://dummy.restapiexample.com/api/v1/
 >Endpoints References 
 http://dummy.restapiexample.com/
 
-###### Project configured with Jenkins video for daily cron job file Name (API [Jenkins] - Google Chrome 03-11-2019 23_16_55.zip)
+###### Project configured with Jenkins for daily cron job (Video attachement :-API [Jenkins] - Google Chrome 03-11-2019 23_16_55.zip)
 > Cron Job Expression 0 0 * * *
