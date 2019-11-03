@@ -25,9 +25,9 @@ Folder Structure
          └── resources                     #Feature File & configuration file
                     └── Feature Files
                     └── karate-config.js  #
-        └── java                          #Runner files & Json Payload
-                    └── payload file      
-                    └── runner file  
+         └── java                          #Runner files & Json Payload
+              └── payload file      
+              └── runner file  
     ├── surefire-reports                  # log files & html reports
          └── *.html                       
          └── *.log                                         
